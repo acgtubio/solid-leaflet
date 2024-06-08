@@ -1,4 +1,4 @@
-type LeafletConfig = {
+export type LeafletConfig = {
   TileProvider: string;
   AttributionUrl: string;
   MaxZoom: number;

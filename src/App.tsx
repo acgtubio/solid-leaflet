@@ -1,9 +1,9 @@
 import type { Component } from 'solid-js';
-import LeafletMap from '../leaflet/Map';
+import LeafletMap from './components/Map';
 
 const App: Component = () => {
   return (
-    <div>
+    <div class='w-screen h-screen'>
       <LeafletMap />
     </div>
   );
