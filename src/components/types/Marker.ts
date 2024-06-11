@@ -1,6 +1,7 @@
 import { LeafletIcon } from "../markers/Icon"
+import { Coordinates } from "./Size";
 
-export type Marker = {
+export type MarkerOptions = {
   icon?: LeafletIcon;
   keyboard?: boolean;
   title?: string;
@@ -13,4 +14,9 @@ export type Marker = {
   shadowPane?: string;
   bubblingMouseEvents?: boolean;
   autoPanOnFocus?: boolean;
+}
+
+export type Marker = {
+  latlng: Coordinates;
+  options?: MarkerOptions;
 }
