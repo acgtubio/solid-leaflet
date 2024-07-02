@@ -12,6 +12,12 @@ function setupMap(config: LeafletConfig) {
 		attribution: `&copy; ${config.AttributionUrl}`
 	}).addTo(map);
 
+	map.on("click", (e) => {
+		console.group();
+		console.info(e);
+		console.groupEnd();
+	});
+
 	return map;
 }
 

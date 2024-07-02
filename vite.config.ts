@@ -15,6 +15,19 @@ export default defineConfig({
     port: 3000,
   },
   build: {
+    lib: {
+      entry: 'src/index.ts',
+      name: 'SolidLeaflet',
+      fileName: (format) => `solid-leaflet.${format}.js`,
+    },
+    rollupOptions: {
+      external: ['solid-js'],
+      output: {
+        globals: {
+          'solid-js': 'Solid',
+        },
+      },
+    },
     target: 'esnext',
   },
 });

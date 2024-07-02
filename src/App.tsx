@@ -13,7 +13,19 @@ const App: Component = () => {
       options: {
         icon: icon
       }
-    }
+    },
+    {
+      latlng: [51.495011293466774, -0.07420063018798828],
+      options: {
+        icon: icon
+      }
+    },
+    {
+      latlng: [51.50144996202149, -0.07475852966308595],
+      options: {
+        icon: icon
+      }
+    },
   ];
 
   return (
